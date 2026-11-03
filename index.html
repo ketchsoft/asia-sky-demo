@@ -59,6 +59,7 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL.loader.js";
       var config = {
+        devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
         arguments: [],
         dataUrl: buildUrl + "/WebGL.data.unityweb",
         frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
